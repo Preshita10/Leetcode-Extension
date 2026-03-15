@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Buddy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo-wrap">
+        <span class="logo-icon">◆</span>
+        <div>
+          <h1 class="title">Student Buddy</h1>
+          <p class="subtitle">Your AI Coding Mentor</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="button-row">
+      <button id="getHintBtn" class="btn btn-hint">
+        <span class="btn-icon">💡</span>
+        <span>Get Hint</span>
+      </button>
+      <button id="getConceptBtn" class="btn btn-concept">
+        <span class="btn-icon">📚</span>
+        <span>Get Concept</span>
+      </button>
+    </div>
+
+    <div id="loadingIndicator" class="loading-indicator" hidden>
+      <span class="spinner"></span>
+      <span id="loadingText" class="loading-text">Generating...</span>
+    </div>
+
+    <div id="resultArea" class="result-card" hidden>
+      <div id="resultLabel" class="result-label">Hint</div>
+      <textarea id="hintText" class="result-text" readonly></textarea>
+    </div>
+
+    <div id="errorArea" class="error-area" hidden>
+      <p id="errorText" class="error-text"></p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

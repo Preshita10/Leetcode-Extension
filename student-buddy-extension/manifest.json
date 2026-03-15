@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Student Buddy AI Mentor",
+  "version": "1.0.0",
+  "description": "Your AI coding mentor - get hints, not solutions, while solving LeetCode problems.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://leetcode.com/problems/*",
+    "https://openrouter.ai/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Student Buddy"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/problems/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
