@@ -27,11 +27,7 @@ The extension uses [OpenRouter](https://openrouter.ai/) to call Gemini. An OpenR
 3. Click **Get Hint**.
 4. Wait for “Generating hint...” to finish; your hint will appear in the text area.
 
-## Screenshots
 
-student-buddy-extension/screenshots/popup.png
-
-*Add your own screenshots: place `popup.png` (extension popup) and `hint-example.png` (hint shown on a LeetCode problem) in the `screenshots/` folder.*
 
 ## Project structure
 
