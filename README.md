@@ -29,9 +29,7 @@ The extension uses [OpenRouter](https://openrouter.ai/) to call Gemini. An OpenR
 
 ## Screenshots
 
-| Popup | Hint in action |
-|-------|----------------|
-| ![Popup](screenshots/popup.png) | ![Hint](screenshots/hint-example.png) |
+student-buddy-extension/screenshots/popup.png
 
 *Add your own screenshots: place `popup.png` (extension popup) and `hint-example.png` (hint shown on a LeetCode problem) in the `screenshots/` folder.*
 
